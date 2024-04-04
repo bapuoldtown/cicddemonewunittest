@@ -35,3 +35,10 @@ jobs:
     - name: Run flake8 for linting test function codes
       run: |
         flake8 tests
+    - name: Run coverage on the unit test cases
+      run: |
+        coverage run -m pytest  -v -s
+    - name: Display coverage report executed by the above step
+      run: |
+        coverage report -m
+  
