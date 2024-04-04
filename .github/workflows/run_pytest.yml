@@ -29,3 +29,9 @@ jobs:
     - name: Run tests using pytest
       run: |
         pytest -m component
+    - name: Run flake8 for linting main codes
+      run: |
+        flake8 app_codes
+    - name: Run flake8 for linting test function codes
+      run: |
+        flake8 tests
