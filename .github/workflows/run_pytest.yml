@@ -29,6 +29,12 @@ jobs:
     - name: Run tests using pytest
       run: |
         pytest -m component
+    - name: Run the black tool
+      run: |
+        black app_codes
+    - name: Run black on test files
+      run: |
+        black tests
     - name: Run flake8 for linting main codes
       run: |
         flake8 app_codes

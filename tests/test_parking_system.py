@@ -9,6 +9,9 @@ def test_reserve_mid():
     assert ParkingSystem.display() is not None
 
 
+
+
+
 @pytest.mark.component
 def test_reserve_large():
     sob = ParkingSystem("isuzu", "large")
